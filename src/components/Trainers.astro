@@ -1,0 +1,35 @@
+---
+import config from '../../site.json';
+const trainers = config.trainers;
+---
+<section id="trainers" class="py-24 px-6 lg:px-12 bg-base-200/50">
+  <div class="container mx-auto">
+    <div class="text-center mb-16 fade-in-up">
+      <span class="badge badge-outline border-accent text-accent text-xs tracking-widest uppercase mb-4">Expert Coaching</span>
+      <h2 class="text-4xl md:text-5xl font-heading font-bold">Meet the Team</h2>
+      <p class="text-base-content/60 mt-4 max-w-md mx-auto">Certified professionals who live and breathe fitness. Your goals are their mission.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
+      {trainers.map((trainer) => (
+        <div class="card bg-base-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+          <!-- Photo -->
+          <div class="relative aspect-square bg-base-300/50 overflow-hidden rounded-t-2xl">
+            <img src={trainer.image} alt={trainer.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          </div>
+
+          <div class="card-body p-5">
+            <h3 class="font-heading font-semibold text-lg">{trainer.name}</h3>
+            <p class="text-accent text-sm font-medium">{trainer.specialty}</p>
+            <p class="text-base-content/60 text-sm mt-2 leading-relaxed">{trainer.bio}</p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              {trainer.certifications.map((cert: string) => (
+                <span class="badge badge-outline badge-sm text-xs">{cert}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

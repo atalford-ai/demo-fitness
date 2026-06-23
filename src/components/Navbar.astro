@@ -1,0 +1,44 @@
+---
+import config from '../../site.json';
+---
+<header class="navbar bg-base-100/80 backdrop-blur-md sticky top-0 z-50 border-b border-base-300/50">
+  <div class="navbar-start">
+    <a href="/" class="btn btn-ghost text-xl font-heading font-bold tracking-tight">
+      <!-- Dumbbell icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h1m3 0H5m0 0V9m0 3v3m14-3h1m-3 0h2m0 0V9m0 3v3M8 12h8M8 12V8m0 4v4m8-4V8m0 4v4" />
+      </svg>
+      <span class="text-accent">{config.business_name.split(' ')[0]}</span> {config.business_name.split(' ').slice(1).join(' ')}
+    </a>
+  </div>
+
+  <nav class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 gap-1">
+      <li><a href="#classes" class="font-medium">Classes</a></li>
+      <li><a href="#trainers" class="font-medium">Trainers</a></li>
+      <li><a href="#membership" class="font-medium">Membership</a></li>
+      <li><a href="#about" class="font-medium">About</a></li>
+      <li><a href="#contact" class="font-medium">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="navbar-end gap-2">
+    <a href="#membership" class="btn btn-accent btn-sm hidden sm:inline-flex">Join Now</a>
+
+    <!-- Mobile menu -->
+    <div class="dropdown dropdown-end lg:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-base-200 rounded-box w-52">
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,140 @@
+{
+  "business_name": "Iron Temple",
+  "tagline": "Elevate Your Grind.",
+  "description": "Premium fitness studio and personal training. Expert coaches, modern equipment, and a community that pushes you to your best.",
+  "theme": "dark",
+  "fonts": {
+    "heading": "DM Sans",
+    "body": "Inter"
+  },
+  "is_demo": true,
+  "demo_cta": "https://altitudz.com",
+  "contact": {
+    "email": "hello@irontemple.com",
+    "phone": "(404) 555-8421",
+    "address": "789 Peachtree St NE, Atlanta, GA 30308",
+    "hours": {
+      "weekday": "5:00 AM - 10:00 PM",
+      "saturday": "6:00 AM - 8:00 PM",
+      "sunday": "7:00 AM - 6:00 PM"
+    }
+  },
+  "social": {
+    "instagram": "https://instagram.com/irontemple",
+    "twitter": "https://twitter.com/irontemple",
+    "tiktok": "https://tiktok.com/@irontemple"
+  },
+  "sections": {
+    "hero": true,
+    "classes": true,
+    "trainers": true,
+    "membership": true,
+    "about": true,
+    "contact": true,
+    "footer": true,
+    "transformations": false,
+    "blog": false,
+    "nutrition": false
+  },
+  "classes": [
+    {
+      "name": "HIIT",
+      "price": 25,
+      "duration": "45 min",
+      "description": "High-intensity interval training that torches calories and builds explosive power. No two sessions are the same.",
+      "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Spin",
+      "price": 20,
+      "duration": "50 min",
+      "description": "Rhythm-driven cycling with energy that fills the room. Build endurance while the playlist keeps you moving.",
+      "image": "https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Boxing",
+      "price": 30,
+      "duration": "60 min",
+      "description": "Learn proper form, footwork, and combinations. Full-body conditioning that sharpens your mind and body.",
+      "image": "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Yoga",
+      "price": 15,
+      "duration": "60 min",
+      "description": "Restore balance and flexibility. From power flows to restorative sessions, find your center on the mat.",
+      "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Strength Training",
+      "price": 25,
+      "duration": "55 min",
+      "description": "Structured lifting sessions focused on progressive overload. Build muscle, gain strength, see results.",
+      "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "CrossFit",
+      "price": 30,
+      "duration": "60 min",
+      "description": "Functional fitness at high intensity. Olympic lifts, gymnastics, and metabolic conditioning in one session.",
+      "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&h=600&fit=crop"
+    }
+  ],
+  "trainers": [
+    {
+      "name": "Marcus Johnson",
+      "specialty": "Strength & Conditioning",
+      "certifications": ["NSCA-CSCS", "USAW Level 2", "CPR/AED"],
+      "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&h=600&fit=crop",
+      "bio": "10+ years transforming athletes and everyday warriors. Specializes in powerlifting and athletic performance."
+    },
+    {
+      "name": "Aisha Williams",
+      "specialty": "HIIT & Group Fitness",
+      "certifications": ["ACE-CPT", "TRX Certified", "Precision Nutrition L1"],
+      "image": "https://images.unsplash.com/photo-1609899464926-209eb71a7640?w=600&h=600&fit=crop",
+      "bio": "Energy personified. Aisha's classes are where you push past limits you didn't know you had."
+    },
+    {
+      "name": "David Chen",
+      "specialty": "Boxing & MMA",
+      "certifications": ["NASM-CPT", "USA Boxing Coach", "First Aid"],
+      "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&h=600&fit=crop",
+      "bio": "Former amateur champion turned coach. Teaches technique-first boxing for all skill levels."
+    },
+    {
+      "name": "Sofia Martinez",
+      "specialty": "Yoga & Mobility",
+      "certifications": ["RYT-500", "FRC Mobility Specialist", "Pre/Postnatal Certified"],
+      "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=600&fit=crop",
+      "bio": "Movement is medicine. Sofia blends traditional yoga with modern mobility science for lasting results."
+    }
+  ],
+  "membership": [
+    {
+      "name": "Basic",
+      "price": 29,
+      "period": "mo",
+      "features": ["Full gym access", "Locker room access", "Free WiFi", "Open 7 days a week"],
+      "highlighted": false
+    },
+    {
+      "name": "Pro",
+      "price": 59,
+      "period": "mo",
+      "features": ["Full gym access", "Unlimited group classes", "Sauna & steam room", "Locker room access", "Guest passes (2/mo)"],
+      "highlighted": true
+    },
+    {
+      "name": "Elite",
+      "price": 99,
+      "period": "mo",
+      "features": ["Full gym access", "Unlimited group classes", "4 PT sessions/month", "Custom nutrition plan", "Sauna & steam room", "Priority booking", "Exclusive member events"],
+      "highlighted": false
+    }
+  ],
+  "built_by": {
+    "name": "Altitudz",
+    "url": "https://altitudz.com"
+  }
+}
