@@ -2,29 +2,26 @@
 import config from '../../site.json';
 const trainers = config.trainers;
 ---
-<section id="trainers" class="py-24 px-6 lg:px-12 bg-base-200/50">
+<section id="trainers" class="py-24 px-6 lg:px-12">
   <div class="container mx-auto">
     <div class="text-center mb-16 fade-in-up">
-      <span class="badge badge-outline border-accent text-accent text-xs tracking-widest uppercase mb-4">Expert Coaching</span>
-      <h2 class="text-4xl md:text-5xl font-heading font-bold">Meet the Team</h2>
-      <p class="text-base-content/60 mt-4 max-w-md mx-auto">Certified professionals who live and breathe fitness. Your goals are their mission.</p>
+      <h2 class="text-5xl md:text-6xl font-heading font-bold uppercase tracking-wide">Meet the Team</h2>
+      <p class="text-base-content/50 mt-4 uppercase tracking-wider text-sm">Certified. Dedicated. Relentless.</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
+    <div class="flex flex-col gap-6 max-w-4xl mx-auto stagger-children">
       {trainers.map((trainer) => (
-        <div class="card bg-base-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-          <!-- Photo -->
-          <div class="relative aspect-square bg-base-300/50 overflow-hidden rounded-t-2xl">
-            <img src={trainer.image} alt={trainer.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-          </div>
-
-          <div class="card-body p-5">
-            <h3 class="font-heading font-semibold text-lg">{trainer.name}</h3>
-            <p class="text-accent text-sm font-medium">{trainer.specialty}</p>
-            <p class="text-base-content/60 text-sm mt-2 leading-relaxed">{trainer.bio}</p>
-            <div class="flex flex-wrap gap-1.5 mt-3">
+        <div class="card card-side bg-base-200 shadow-xl">
+          <figure class="w-48 min-h-48 shrink-0">
+            <img src={trainer.image} alt={trainer.name} class="w-full h-full object-cover" loading="lazy" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-2xl font-heading uppercase tracking-wide">{trainer.name}</h3>
+            <p class="text-accent text-sm font-bold uppercase tracking-wider">{trainer.specialty}</p>
+            <p class="text-base-content/60 text-sm leading-relaxed mt-1">{trainer.bio}</p>
+            <div class="flex flex-wrap gap-2 mt-3">
               {trainer.certifications.map((cert: string) => (
-                <span class="badge badge-outline badge-sm text-xs">{cert}</span>
+                <span class="badge badge-outline badge-sm">{cert}</span>
               ))}
             </div>
           </div>

@@ -1,46 +1,38 @@
 ---
 import config from '../../site.json';
 ---
-<section class="min-h-[90vh] flex items-center pt-16">
-  <div class="container mx-auto px-6 lg:px-12">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left: Text -->
-      <div class="fade-in-up">
-        <span class="badge badge-accent text-xs tracking-widest uppercase mb-4 font-bold">No Excuses. No Limits.</span>
-        <h1 class="text-5xl md:text-7xl font-heading font-bold leading-none mb-6 uppercase tracking-wide">
-          Push Past<span class="text-accent"> Every</span>
-          <br />
-          <span class="text-accent">Limit.</span>
-        </h1>
-        <p class="text-lg text-base-content/70 max-w-md mb-8 font-medium">
-          {config.description}
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#membership" class="btn btn-accent btn-lg px-10 uppercase tracking-wider font-bold text-lg">
-            Start Free Trial
-          </a>
-          <a href="#classes" class="btn btn-outline btn-lg px-8 uppercase tracking-wider">
-            View Classes
-          </a>
+<section class="hero min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&h=900&fit=crop');">
+  <div class="hero-overlay bg-black/75"></div>
+  <div class="hero-content text-center text-neutral-content flex-col">
+    <div class="max-w-4xl fade-in-up">
+      <p class="text-accent uppercase tracking-[0.3em] text-sm font-bold mb-4">No Excuses. No Limits.</p>
+      <h1 class="text-7xl md:text-8xl lg:text-9xl font-heading font-bold leading-none uppercase tracking-wide mb-6">
+        Push Past<br />Every Limit
+      </h1>
+      <p class="text-lg text-white/60 max-w-lg mx-auto mb-8">
+        {config.description}
+      </p>
+
+      <!-- Stats row -->
+      <div class="stats stats-horizontal bg-transparent shadow-none mb-10">
+        <div class="stat">
+          <div class="stat-value text-accent text-4xl font-heading">2,500+</div>
+          <div class="stat-desc text-white/50 uppercase tracking-wider text-xs">Active Members</div>
         </div>
-        <p class="mt-4 text-sm text-base-content/50 uppercase tracking-wider">7-day free trial. Cancel anytime. Zero commitment.</p>
+        <div class="stat">
+          <div class="stat-value text-accent text-4xl font-heading">40+</div>
+          <div class="stat-desc text-white/50 uppercase tracking-wider text-xs">Classes / Week</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value text-accent text-4xl font-heading">8</div>
+          <div class="stat-desc text-white/50 uppercase tracking-wider text-xs">Years Strong</div>
+        </div>
       </div>
 
-      <!-- Right: Gym image -->
-      <div class="fade-in-up relative" style="animation-delay: 0.3s;">
-        <div class="relative aspect-square max-w-lg mx-auto">
-          <!-- Accent glow behind image -->
-          <div class="absolute inset-0 bg-accent/10 rounded-3xl blur-3xl"></div>
-          <div class="relative bg-base-200 rounded-3xl overflow-hidden aspect-square border border-accent/20">
-            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=800&fit=crop" alt="Modern gym interior" class="w-full h-full object-cover" />
-          </div>
-          <!-- Floating badge -->
-          <div class="absolute -bottom-4 -left-4 bg-base-200 border border-accent/30 rounded-2xl p-4 shadow-xl">
-            <p class="text-xs text-base-content/60 uppercase tracking-wider font-bold">Memberships from</p>
-            <p class="text-3xl font-heading font-bold text-accent">$29/mo</p>
-          </div>
-        </div>
-      </div>
+      <a href="#membership" class="btn btn-accent btn-lg uppercase tracking-widest font-bold px-12">
+        Start Free Trial
+      </a>
+      <p class="mt-4 text-xs text-white/40 uppercase tracking-wider">7-day free trial. Cancel anytime.</p>
     </div>
   </div>
 </section>
